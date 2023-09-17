@@ -67,6 +67,7 @@ body {
     border: none;
     vertical-align: middle;
     margin-left: 3px;
+    transition: transform .2s ease-in-out;
 }
 
 .dropdown-menu{
@@ -184,6 +185,12 @@ body {
 /* *** Header End *** */
 
 @media(max-width:768px){
+    /* Nav Start */
+    .dropdown-toggle[aria-expanded=true]::after {
+        transform: rotate(-180deg);
+    }
+    /* Nav End */
+
     /* Carousel Start */
     .carouseltexts h2{
         font-size: 30px;
@@ -210,7 +217,6 @@ body {
         top: 100%;
         left: 0;
     }
-
     /* Nav End */
 
 }
