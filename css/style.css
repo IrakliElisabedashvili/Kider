@@ -27,6 +27,9 @@ body {
 /* *** Header Start *** */
 
 /* Nav Start */
+nav{
+    z-index: 10 !important;
+}
 .navbar-brand{
     color: #fe5d37;
 }
@@ -183,6 +186,207 @@ body {
 /* Carousel End */
 
 /* *** Header End *** */
+
+
+
+/* *** School Facilities Start *** */
+
+/* Heading Texts Div */
+.headingtext{
+    max-width: 600px;
+}
+
+.headingtext h2{
+    color: #103741;
+}
+
+.headingtext p{
+    color: #74787c;
+}
+/* Heading Texts Div */
+
+/* Facility Items Start */
+.icon-bg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffefeb;
+    color: #FE5D37;
+}
+
+
+.leftear, .rightear{
+    width: 15px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffefeb;
+    transition: .5s ease-in-out;
+}
+
+.facility-texts{
+    min-height: 250px;
+    background-color: #ffefeb;
+    border-radius: 100%;
+    position: relative;
+}
+
+.facility-texts h3{
+    color: #FE5D37;
+}
+
+.facility-texts p{
+    color: #74787c;
+}
+
+.facility-item > * {
+    transition: .5s ease-in-out;
+}
+
+#schoolbus:hover .schoolbus-icon, #schoolbus:hover .schoolbus-texts, #schoolbus:hover .schoolbusear{
+    background-color: #FE5D37;
+    color: white;
+}
+
+#schoolbus:hover .schoolbus-texts h3, #schoolbus:hover .schoolbus-texts p{
+    color: white;
+}
+
+#playground > * , .playgroundear{
+    background-color: #e8f3ee;
+}
+
+.playground-icon , .playground-texts h3{
+    color: #198754;
+}
+
+#playground:hover .playground-icon, #playground:hover .playground-texts, #playground:hover .playgroundear{
+    background-color: #198754;
+    color: white;
+}
+
+#playground:hover .playground-texts h3, #playground:hover .playground-texts p {
+    color: white;
+}
+
+#healty > * , .healthyear{
+    background-color: #fff9e7;
+}
+
+.healty-icon , .healthy-texts h3{
+    color: #ffc107;
+}
+
+#healthy:hover .healty-icon, #healthy:hover .healthy-texts, #healthy:hover .healthyear{
+    background-color: #ffc107;
+    color: white;
+}
+
+#healthy:hover .healthy-texts h3, #healthy:hover .healthy-texts p{
+    color: white;
+}
+
+#positive > * , .positiveear{
+    background-color: #e7fafe;
+}
+
+.positive-icon , .positive-texts h3{
+    color: #0dcaf0;
+}
+
+#positive:hover  .positive-icon, #positive:hover .positive-texts, #positive:hover .positiveear{
+    background: #0dcaf0;
+    color: white;
+}
+
+#positive:hover .positive-texts h3, #positive:hover .positive-texts p{
+    color: white;
+}
+/* Facility Items End */
+
+/* *** School Facilities End *** */
+
+
+
+/* *** About Us Container Start *** */
+
+/* About Us Texts */
+.aboutustexts h2{
+    color: #103741;
+}
+.aboutustexts p{
+    color: #74787c;
+}
+
+.aboutustexts a{
+    background-color: #FE5D37;
+    transition: .8s ease-in-out;
+    color: white;
+}
+
+.aboutustexts a:hover{
+    background-color: #fe7555;
+    color: white;
+}
+.aboutustexts img{
+    width: 45px;
+    height: 45px;
+}
+
+.aboutustexts h6{
+    color:#fe7555;
+}
+
+.aboutustexts .ceo{
+    font-size: 14px;
+}
+/* About Us Texts End */
+
+/* About Us Images Column Start */
+.firstimg img, .secondimg img, .thirdimg img {
+    border-radius: 100%;
+    transition: .5s ease-in-out;
+}
+
+.firstimg img{
+    border: 16px solid #fff5f3;
+}
+
+.firstimg:hover > img, .secondimg:hover > img, .thirdimg:hover > img{
+    border-color: #fe5d37;
+}
+
+.secondimg img, .thirdimg img{
+    margin-top: -150px;
+    border: 16px solid #fff5f3;
+}
+/* About Us Images Column End */
+
+/* *** About Us Container End *** */
+
+
+
+/* *** Become a Teacher Container Start *** */
+#teachercontainer h2{
+    color: #103741;
+}
+
+#teachercontainer p{
+    color: #74787c;
+}
+
+#teachercontainer a{
+    background-color: #FE5D37;
+    color: white;
+    transition: .8s ease-in-out;
+}
+
+#teachercontainer a:hover{
+    background-color: #fe7555;
+    color: white;
+}
+/* *** Become a Teacher Container End *** */
+
+
 
 @media(max-width:768px){
     /* Nav Start */
