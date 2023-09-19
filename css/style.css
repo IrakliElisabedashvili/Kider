@@ -388,6 +388,148 @@ nav{
 
 
 
+/* *** School Classes Container Start *** */
+
+/* Classes Items Start */
+.classes-item > *{
+    background: #FFF5F3;
+}
+
+.classes-item{
+    transition: .5s ease-in-out;
+}
+.classes-item:hover{
+    margin-top: -10px;
+}
+
+.classes-content{
+    margin-top: -50px;
+}
+
+.classes-content a{
+    color: #103741;
+    transition: .5s ease-in-out;
+}
+
+.classes-content a:hover{
+    color: #fe5d37;
+}
+
+.teacherandprice h6{
+    color: #fe7555;
+}
+.teacherandprice p{
+    font-size: 14px;
+    color: #74787c;
+}
+
+.teacherandprice .price{
+    background-color: #FE5D37;
+}
+/* Classes Items End */
+
+/* *** School Classes Container End *** */
+
+
+
+/* *** Make Appointment Container Start *** */
+#appointmentforms h2{
+    color: #103741;
+}
+
+#appointmentforms .form-control:focus{
+    box-shadow: 0 0 0 3px #ffcec4;
+}
+
+#appointmentforms button{
+    background-color: #FE5D37;
+    transition: .5s ease-in-out;
+    color: white;
+}
+
+#appointmentforms button:hover{
+    background-color: #fe7555;
+    color: white;
+}
+/* *** Make Appointment Container End *** */
+
+
+
+/* *** Popular Teachers Container Start *** */
+.teacher-text{
+    height: 250px;
+    width: 250px;
+    border: 16px solid #ffefeb;
+    transition: .5s ease-in-out;
+}
+
+.teacher-text:hover{
+    border-color: #fe7555;
+}
+
+.teacher-text a{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FE5D37;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.teacher-text a:hover{
+    background-color: #fe7555;
+    color: white;
+}
+/* *** Popular Teachers Container End *** */
+
+
+
+/* *** Our Clients Say Container Start *** */
+#ourclientscontainer .ourclients-carousel{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#ourclientscontainer .ourclients-item{
+    background-color: #FFF5F3;
+}
+
+#ourclientscontainer .owl-prev{
+    background-color: #fe5d37;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ourclientscontainer .owl-next{
+    background-color: #fe5d37;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* *** Our Clients Say Container End *** */
+
+
 @media(max-width:768px){
     /* Nav Start */
     .dropdown-toggle[aria-expanded=true]::after {

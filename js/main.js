@@ -13,9 +13,27 @@ window.onscroll = () => {
 // Carousel Margin
 setInterval(() => {
     let navHeight = document.querySelector('nav').offsetHeight;
-    let headerCarousel = document.getElementById('headercarousel');
-    headerCarousel.style.marginTop = `${navHeight}px`;
+    let headerItem = document.getElementById('headeritem');
+    headerItem.style.marginTop = `${navHeight}px`;
 }, 100)
-
-
 // Carousel Margin
+
+
+// Owl Carousel
+$(".ourclients-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    margin: 20,
+    dots: false,
+    loop: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        992: {
+            items: 2
+        }
+    }
+});
+// Owl Carousel
