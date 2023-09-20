@@ -84,13 +84,18 @@ nav{
     color: white;
 }
 
+.dropdown-menu .dropdown-item.active{
+    background-color: #fe5d37;
+    color: white;
+}
+
 /* Dropdown Styles */
 
 /* Nav End */
 
 
 /* Carousel Start */
-#carouselhead::before{
+#carouselhead::before, #pageheader::before{
     content: '';
     background-image: url('../img/bg-header-top.png');
     background-repeat: repeat-x;
@@ -103,7 +108,7 @@ nav{
     z-index: 2;
 }
 
-#carouselhead::after{
+#carouselhead::after, #pageheader::after{
     content: '';
     background-image: url('../img/bg-header-bottom.png');
     background-repeat: repeat-x;
@@ -185,6 +190,21 @@ nav{
 
 /* Carousel End */
 
+/* ** Page Header Start ** */
+#pageheader{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../img/carousel-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#pageheader .breadcrumb-item a{
+    color: #fe5d37;
+}
+
+#pageheader .breadcrumb-item::before{
+    color: #74787c;
+}
+/* ** Page Header End ** */
+
 /* *** Header End *** */
 
 
@@ -202,6 +222,17 @@ nav{
 
 .headingtext p{
     color: #74787c;
+}
+
+.headingtext .btn{
+    background-color: #fe5d37;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+.headingtext .btn:hover{
+    background-color: #fe7555;
+    color: white;
 }
 /* Heading Texts Div */
 
@@ -496,6 +527,18 @@ nav{
     background-color: #FFF5F3;
 }
 
+#ourclientscontainer .ourclients-item p{
+    color:#74787c;
+}
+
+#ourclientscontainer .ourclients-item h3{
+    color:#103741;
+}
+
+#ourclientscontainer .ourclients-item span{
+    color: #74787c;
+}
+
 #ourclientscontainer .owl-prev{
     background-color: #fe5d37;
     width: 45px;
@@ -510,6 +553,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s ease-in-out;
 }
 
 #ourclientscontainer .owl-next{
@@ -526,8 +570,102 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s ease-in-out;
+}
+
+#ourclientscontainer .owl-prev:hover{
+    background-color: #fe7555;
+    color: white;
+}
+
+#ourclientscontainer .owl-next:hover{
+    background-color: #fe7555;
+    color: white;
 }
 /* *** Our Clients Say Container End *** */
+
+
+
+/* *** Footer Start *** */
+footer{
+    background-color: #103741;
+}
+
+footer p{
+    color: #74787c;
+}
+
+footer .social-icons .btn{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    border: 1px solid white;
+    color: white;
+}
+
+footer .social-icons .btn:hover{
+    background-color: #FE5D37;
+    color: white;
+    border: 1px solid #fe5d37;
+}
+
+footer .quicklinks .btn{
+    color: #74787c;
+    transition: .5s ease-in-out;
+}
+
+footer .quicklinks .btn:hover{
+    color: #FE5D37;
+    letter-spacing: 1px;
+}
+
+footer .photogallery img{
+    border: 4px solid white;
+}
+
+footer .newsletter form button{
+    background-color: #fe5d37;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+footer .newsletter form button:hover{
+    background-color: #fe7555;
+    color: white;
+}
+
+footer .newsletter input, footer .newsletter input::placeholder{
+    color: #74787c;
+}
+
+footer .newsletter input:focus{
+    box-shadow: 0 0 5px 1px #fe5d37;
+}
+
+#scrolltotop{
+    width: 48px;
+    height: 48px;
+    background-color: #fe5d37;
+    color: white;
+    transition: .5s ease-in-out;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrolltotop:hover{
+    background-color: #fe7555;
+    color: white;
+}
+/* *** Footer End *** */
+
 
 
 @media(max-width:768px){

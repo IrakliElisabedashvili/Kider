@@ -1,11 +1,18 @@
 // Navbar Fixed
-let nav = document.querySelector('nav');
+let nav = document.querySelector('#navbar');
+let scrollButton = document.getElementById('scrolltotop');
 
 window.onscroll = () => {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         nav.classList.add('shadow-sm');
     } else {
         nav.classList.remove('shadow-sm');
+    }
+
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        scrollButton.style.display = "flex";
+    } else if (document.body.scrollTop < 10 || document.documentElement.scrollTop < 10) {
+        scrollButton.style.display = "none";
     }
 }
 // Navbar Fixed
